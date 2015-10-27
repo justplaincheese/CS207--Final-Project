@@ -34,7 +34,7 @@ void setup() {
   minim = new Minim(this);
   arduino = new Arduino(this, Arduino.list()[1], 57600);
   
-  song = minim.loadFile("keys.mp3", 2048);
+  song = minim.loadFile("keys.mp3", 2048); // This is where you chagne the name depending on what song you put in the data file in the project
   song.play();
   // a beat detection object that is FREQ_ENERGY mode that 
   // expects buffers the length of song's buffer size
